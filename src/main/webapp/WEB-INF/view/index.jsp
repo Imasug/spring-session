@@ -10,6 +10,7 @@
 	<h3>Welcome</h3>
 	<form:form modelAttribute="welcomeForm">
 		<form:input path="input" />
+		<input type="submit" value="Submit" />
 	</form:form>
 </body>
 </html>

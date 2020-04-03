@@ -20,4 +20,12 @@ public class WelcomeController {
 		mav.setViewName("index");
 		return mav;
 	}
+
+	@PostMapping("/")
+	public ModelAndView post(@ModelAttribute WelcomeForm form, ModelAndView mav) {
+		System.out.println("post");
+		System.out.println(form.getInput());
+		mav.setViewName("redirect:/");
+		return mav;
+	}
 }
