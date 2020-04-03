@@ -13,6 +13,7 @@ public class DispatcherConfig implements WebMvcConfigurer {
 
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
+		System.out.println("configureViewResolvers");
 		registry.jsp().prefix("/WEB-INF/view/");
 	}
 }
