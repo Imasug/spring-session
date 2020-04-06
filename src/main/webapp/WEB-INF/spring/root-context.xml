@@ -12,9 +12,7 @@
 	<context:annotation-config />
 
 	<!-- Spring Session -->
-	<bean
-		class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration" />
-	<bean
-		class="org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory" />
+	<bean name="sessionConfig"
+		class="jp.co.ocp.sample.spring_session.config.SessionConfig" />
 
 </beans>
