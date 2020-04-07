@@ -26,6 +26,7 @@ public class WelcomeController {
 	@PostMapping("/")
 	public ModelAndView post(@ModelAttribute WelcomeForm form, ModelAndView mav) {
 		System.out.println("post");
+		System.out.println(form);
 		mav.setViewName("redirect:/");
 		return mav;
 	}
